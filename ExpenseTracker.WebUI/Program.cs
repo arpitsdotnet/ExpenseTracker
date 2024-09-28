@@ -10,6 +10,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(
     options => options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")));
 
+//Register Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(
+    builder.Configuration.GetValue<string>("SyncFusion:LicenceKey"));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

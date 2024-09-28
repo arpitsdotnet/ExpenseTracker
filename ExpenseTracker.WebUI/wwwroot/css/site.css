@@ -1,22 +1,35 @@
-html {
-  font-size: 14px;
-}
+html { font-size: 14px; }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html { font-size: 16px; }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus { outline: none !important; box-shadow: none !important; -moz-appearance: none !important; -webkit-appearance: none !important; appearance: none !important; }
+.btn-success { color: #fff !important; }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
+html { position: relative; min-height: 100%; }
 
-body {
-  margin-bottom: 60px;
-}
+body { margin-bottom: 60px; background-color: #12161d; color: #FFF !important; }
+
+/* DARK THEME */
+.e-input-group:not(.e-success):not(.e-warning):not(.e-error):not(.e-float-icon-left), .e-input-group.e-float-icon-left:not(.e-success):not(.e-warning):not(.e-error) .e-input-in-wrap, .e-input-group.e-control-wrapper:not(.e-success):not(.e-warning):not(.e-error):not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-success):not(.e-warning):not(.e-error) .e-input-in-wrap, .e-float-input.e-float-icon-left:not(.e-success):not(.e-warning):not(.e-error) .e-input-in-wrap, .e-float-input.e-control-wrapper.e-float-icon-left:not(.e-success):not(.e-warning):not(.e-error) .e-input-in-wrap { border-color: rgb(255 255 255 / 57%); }
+label.e-float-text, .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom, .e-float-input.e-control-wrapper:not(.e-error):not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom, .e-float-input.e-small:not(.e-error):not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom, .e-float-input.e-control-wrapper.e-small:not(.e-error):not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom, .e-small .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom, .e-small .e-float-input.e-control-wrapper:not(.e-error):not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom { color: rgb(255 255 255 / 57%); }
+.e-float-input.e-control-wrapper:not(.e-error) input:focus ~ label.e-float-text, .e-float-input.e-control-wrapper:not(.e-error) input:valid ~ label.e-float-text, .e-float-input.e-control-wrapper:not(.e-error) input ~ label.e-label-top.e-float-text, .e-float-input.e-control-wrapper:not(.e-error) input[readonly] ~ label.e-label-top.e-float-text, .e-float-input.e-control-wrapper:not(.e-error) input[disabled] ~ label.e-label-top.e-float-text, .e-float-input .e-control-wrapper:not(.e-error) input label.e-float-text.e-label-top, .e-float-input.e-control-wrapper:not(.e-error).e-input-focus input ~ label.e-float-text, .e-float-input.e-control-wrapper:not(.e-error) textarea:focus ~ label.e-float-text, .e-float-input.e-control-wrapper:not(.e-error) textarea:valid ~ label.e-float-text, .e-float-input.e-control-wrapper:not(.e-error) textarea ~ label.e-label-top.e-float-text, .e-float-input.e-control-wrapper:not(.e-error) textarea[readonly] ~ label.e-label-top.e-float-text, .e-float-input.e-control-wrapper:not(.e-error) textarea[disabled] ~ label.e-label-top.e-float-text, .e-float-input.e-control-wrapper:not(.e-error) textarea label.e-float-text.e-label-top { color: rgb(255 255 255 / 57%); }
+.e-breadcrumb { color: #FFF !important; }
+    .e-breadcrumb .e-breadcrumb-item .e-breadcrumb-text { color: inherit; }
+    .e-breadcrumb .e-breadcrumb-item .e-breadcrumb-icon { color: inherit; }
+    .e-breadcrumb .e-breadcrumb-separator { color: inherit; }
+    .e-breadcrumb .e-breadcrumb-item[data-active-item] .e-breadcrumb-text { color: inherit; }
+
+/* RADIO BUTTON GROUP */
+.e-btn-group.custom-rbt-group { width: 100%; }
+
+    .e-btn-group.custom-rbt-group .e-btn { width: 50%; }
+
+    .e-btn-group.custom-rbt-group input:checked + label.e-btn { background-color: #FFF; color: #212b36; border: 1px solid #FFF; }
+
+.custom-rbt-group label.e-btn { box-shadow: none !important; border: 1px solid #FFF; background-color: rgb(34 43 51); color: #FFF; }
+
+/* WIDGET */
+.widget { border-radius: 1rem; background-color: #1a222b; }
+.widget-right { border-radius: 1rem; background-color: #212b36; }
